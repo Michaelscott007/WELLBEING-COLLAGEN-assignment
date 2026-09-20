@@ -4,7 +4,11 @@ const html = fs.readFileSync(new URL('../dist/index.html', import.meta.url), 'ut
 const checks = [
   ['Clinical Confidence is the only visible direction', /\.labbar,\.ritual,\.guided,\.proofpage,\.fast\{display:none!important\}/],
   ['three complementary products are present', /class="pairing-card"/g, 3],
-  ['sticky routine selector is present', /id="stickyRoutineSelect"/],
+  ['branded routine picker is present', /id="routinePickerButton"/],
+  ['four routine picker options are present', /class="routine-option/g, 4],
+  ['five visual payment methods are present', /class="payment-method"/g, 5],
+  ['floating peptide badge is hidden', /\.visual:after\{display:none\}/],
+  ['A/B assignment is instrumented', /cta-priority-v1/],
   ['header bag uses an icon', /class="cart"[^>]*>[\s\S]*?<svg/],
   ['sticky bag uses an icon', /id="stickyCart"[^>]*>[\s\S]*?<svg/],
   ['sticky bar offers Add', /class="add">Add<\/button>/],
