@@ -11,7 +11,7 @@ const checks = [
   ['A/B assignment is instrumented', /cta-priority-v1/],
   ['header bag uses an icon', /class="cart"[^>]*>[\s\S]*?<svg/],
   ['sticky bag uses an icon', /id="stickyCart"[^>]*>[\s\S]*?<svg/],
-  ['sticky bar offers Add', /class="add">Add<\/button>/],
+  ['sticky bar offers Add', /<button\b[^>]*\bclass="add"[^>]*>Add<\/button>/],
   ['sticky bar offers Buy now', /class="buy"[^>]*>Buy now<\/button>/],
   ['mobile thumb-zone layout is defined', /"info info info select select cart" "add add add buy buy buy"/],
 ];
