@@ -1,0 +1,5 @@
+[build]
+  publish = "dist"
+
+# This is a static site. Netlify should publish the tracked build artifact
+# directly, without running a build command.
